@@ -1,0 +1,65 @@
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.hlrhr h3 {
+    font-family: 'Digital-7';
+    font-size: 58px;
+    color: #fff;
+    text-align: right;
+    line-height: 40px;
+}
+
+.hlrhr h3 span {
+    font-size: 33px;
+    display: block;
+}
+
+
+/* App.css */
+.app-layout {
+    display: flex;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+
+
+  .fl-table {
+
+    font-size: 12px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+
+
+}
+.table-wrapper {
+    max-width: 800px;
+    overflow-x: scroll;
+}
+
+
+.head{
+    position: relative;
+    top:-100px;
+    left:500px;
+    width:50%
+}
+
+.mysvg {
+    /* display: inline-block; */
+    /* position: absolute; */
+    top: 0px;
+    left: 0px;
+  }
+  
