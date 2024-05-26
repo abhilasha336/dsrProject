@@ -8,7 +8,7 @@ import { HiOutlineChatBubbleBottomCenterText } from 'react-icons/hi2'
 import { FiSettings, FiShoppingCart } from 'react-icons/fi'
 
 export const Sidebar = () => {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(true)
   const ref = useRef(null)
   useClickAway(ref, () => setOpen(false))
   const toggleSidebar = () => setOpen(prev => !prev)
@@ -32,7 +32,7 @@ export const Sidebar = () => {
             ></motion.div>
             <motion.div
               {...framerSidebarPanel}
-              className="fixed top-0 bottom-0 left-0 z-50 w-full h-screen max-w-xs border-r-2 border-zinc-800 bg-zinc-900"
+              className="fixed top-[98px] bottom-0 left-0 z-50 w-full h-screen max-w-xs border-r-2 border-zinc-800 bg-zinc-900"
               ref={ref}
               aria-label="Sidebar"
             >
