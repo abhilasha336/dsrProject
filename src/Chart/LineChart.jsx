@@ -11,21 +11,19 @@ function LineChartComponentOne() {
 
   const fetchData = async () => {
     try {
-      // Dummy data
+      // Dummy revenue data for years 2020 to 2024
       const data = {
         data: [
-          { month: 'January', value: 30 },
-          { month: 'February', value: 20 },
-          { month: 'March', value: 50 },
-          { month: 'April', value: 40 },
-          { month: 'May', value: 60 },
-          { month: 'June', value: 70 },
-          { month: 'July', value: 50 },
+          { year: '2020', revenue: 50000 },
+          { year: '2021', revenue: 40000 },
+          { year: '2022', revenue: 30000 },
+          { year: '2023', revenue: 80000 },
+          { year: '2024', revenue: 90000 },
         ],
       };
 
-      const labels = data.data.map((item) => item.month);
-      const dataPoints = data.data.map((item) => item.value);
+      const labels = data.data.map((item) => item.year);
+      const dataPoints = data.data.map((item) => item.revenue);
       setChartData({ labels, dataPoints });
     } catch (error) {
       console.error('Error fetching data:', error);
@@ -53,7 +51,7 @@ function LineChartComponentOne() {
     labels: labels,
     datasets: [
       {
-        label: 'Values Over Months',
+        label: 'Revenue Over Years',
         data: dataPoints,
         fill: false,
         backgroundColor: borderColor,

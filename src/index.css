@@ -7,7 +7,7 @@
 
 .hlrhr h3 {
     font-family: 'Digital-7';
-    font-size: 58px;
+    font-size: 30px;
     color: #fff;
     text-align: right;
     line-height: 40px;
@@ -61,5 +61,28 @@
     /* position: absolute; */
     top: 0px;
     left: 0px;
+  }
+  
+
+  .home-container {
+    margin-left: 103px;
+    /* transition: margin-left 0.3s ease; */
+}
+
+.sidebar-open .home-container {
+    margin-left: 250px; /* Adjust the value based on your sidebar width */
+}
+/* Stylesheet */
+.sidebar::-webkit-scrollbar {
+    width: 8px; /* Adjust the width as needed */
+  }
+  
+  .sidebar::-webkit-scrollbar-track {
+    background: transparent; /* Set the background color of the scrollbar track */
+  }
+  
+  .sidebar::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.5); /* Set the color and opacity of the scrollbar thumb */
+    border-radius: 4px; /* Adjust the border-radius as needed */
   }
   
