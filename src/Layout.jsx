@@ -13,6 +13,7 @@ function Layout() {
     <>
    <Navigation></Navigation>
        <Outlet></Outlet>
+
     </>
   )
 }

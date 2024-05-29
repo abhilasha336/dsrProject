@@ -5,13 +5,28 @@ import LineChartComponentOne from '../Chart/LineChart'
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../fontAwesome.js'
-import { useRef,useEffect } from 'react';
+import { useRef,useEffect,useState } from 'react';
 import '../index.css'
 
 
 
 function Home({sidebarOpen}) {
     const homeRef = useRef(null);
+    const getCurrentDate = () => {
+        const today = new Date();
+        return today.toISOString().split('T')[0];
+      };
+    
+      const [fromDate, setFromDate] = useState('2024-01-01');
+      const [toDate, setToDate] = useState(getCurrentDate());
+    
+      const handleFromDateChange = (e) => {
+        setFromDate(e.target.value);
+      };
+    
+      const handleToDateChange = (e) => {
+        setToDate(e.target.value);
+      };
     useEffect(() => {
         if (homeRef.current) {
             if (sidebarOpen) {
@@ -26,11 +41,22 @@ function Home({sidebarOpen}) {
     <div ref={homeRef} className="home-container ml-[100px] ">
         <div className='flex justify-center items-center mx-auto mt-12 space-x-4'>
             <div className="bg-blue-600 text-white font-semibold  py-8 px-16 mx-5 rounded-lg hover:bg-purple-700 transition-colors duration-300"><Link to='/laboratory_service'>Laboratory Services</Link>  <FontAwesomeIcon icon="vials" /></div>
-            <div className="bg-orange-600 text-white font-semibold py-8 px-16 mx-5 rounded-lg hover:bg-purple-700 transition-colors duration-300">Imaging Services  <FontAwesomeIcon icon="x-ray" /></div>
+            <div className="bg-orange-600 text-white font-semibold py-8 px-16 mx-5 rounded-lg hover:bg-purple-700 transition-colors duration-300">Imaging Services <FontAwesomeIcon icon="x-ray" /></div>
             <div className="bg-emerald-600 text-white font-semibold py-8 px-16 mx-5 rounded-lg hover:bg-purple-700 transition-colors duration-300">Tele-Radiology Services        <FontAwesomeIcon icon="laptop-medical" />
-</div>
+            </div>
 
          
+
+        </div>
+
+        <div  className='flex justify-center items-center mx-auto mt-12 space-x-4'>
+       
+        <div className="input_text">
+            <input type="date" value={fromDate} onChange={handleFromDateChange} />
+        </div>
+        <div className="input_text">
+            <input type="date" value={toDate} onChange={handleToDateChange} />
+        </div>
 
         </div>
 

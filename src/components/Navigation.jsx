@@ -59,7 +59,7 @@ const [sidebarOpen, setSidebarOpen] = useState(false);
     <nav className="flex items-center justify-between px-5 py-2 border-b-2 border-zinc-800 bg-violet-600">
     <div className="flex items-center gap-3">
       <Sidebar isOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
-      <div><img src='' alt='logo' /></div>
+      <div><img className='hind' src='/hindlab.png' alt='logo' /></div>
     </div>
     <div className="flex-grow text-center">
       <div className='text-white text-lg'>HCS CENTRAL DATA REPOSITORY</div>

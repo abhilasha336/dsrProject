@@ -58,9 +58,10 @@
 
 .mysvg {
     /* display: inline-block; */
-    /* position: absolute; */
-    top: 0px;
+    position: absolute;
+    top: 176px;
     left: 0px;
+ 
   }
   
 
@@ -86,3 +87,39 @@
     border-radius: 4px; /* Adjust the border-radius as needed */
   }
   
+
+
+
+
+
+
+  /* anishma */
+
+
+  
+
+ 
+
+
+/* styles.css */
+.bg-custom-image {
+  background-image: url('/pexels-pixabay-256262.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+
+.labo-img{
+  background-image: url('/pexels-mediocrememories-954585.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.hind{
+  width: 206px;
+  height: 52px;
+  margin-left: 85px;
+}
+
+/* svg { position: inherit; height: 500px;
+} */
