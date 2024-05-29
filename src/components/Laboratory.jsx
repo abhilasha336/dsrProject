@@ -25,8 +25,46 @@ function Laboratory() {
        </div>
 <div className='mt-5'>
       <div className='float-left'>
-      <IndiaMap></IndiaMap>
+        <div className='absolute w-[400px]  h-[300px] left-[200px]'>
+            <img src="/file.png" className='opacity-3'></img>
+            <div className='absolute top-[50px] left-[150px]'>
+              <text x="20" y="30" fontSize="20" fill="black">📍</text>
+            </div>
+            <div className='absolute top-[80px] left-[30px]'>
+              <text x="20" y="30" fontSize="20" fill="black">📍</text>
+            </div>
+            <div className='absolute top-[80px] left-[30px]'>
+              <text x="20" y="30" fontSize="20" fill="black">📍</text>
+            </div>
+            <div className='absolute top-[60px] left-[35px]'>
+              <text x="20" y="30" fontSize="20" fill="black">📍</text>
+            </div>
+            <div className='absolute top-[90px] left-[44px]'>
+              <text x="20" y="30" fontSize="20" fill="black">📍</text>
+            </div>
+            <div className='absolute top-[55px] left-[44px]'>
+              <text x="20" y="30" fontSize="20" fill="black">📍</text>
+            </div>
+            <div className='absolute top-[33px] left-[36px]'>
+              <text x="20" y="30" fontSize="20" fill="black">📍</text>
+            </div>
+            <div className='absolute top-[40px] left-[50px]'>
+              <text x="20" y="30" fontSize="20" fill="black">📍</text>
+            </div>
+            <div className='absolute top-[60px] left-[30px]'>
+              <text x="20" y="30" fontSize="20" fill="black">📍</text>
+            </div>
+            <div className='absolute top-[40px] left-[20px]'>
+              <text x="20" y="30" fontSize="20" fill="black">📍</text>
+            </div>
+            <div className='absolute top-[46px] left-[44px]'>
+              <text x="20" y="30" fontSize="20" fill="black">📍</text>
+            </div>
+            <div className='absolute top-[33px] left-[33px]'>
+              <text x="20" y="30" fontSize="20" fill="black">📍</text>
+            </div>
 
+        </div>
       </div>
       <div className='float-right'>
         <div className="bg-blue-600 text-white font-semibold  py-4 px-12 mx-5 mt-2 rounded-lg hover:bg-purple-700 transition-colors duration-300"><Link to='/laboratory_service/kerala'>Kerala</Link>  <FontAwesomeIcon icon="vials" /></div>
